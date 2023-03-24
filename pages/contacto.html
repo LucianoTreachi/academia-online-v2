@@ -108,22 +108,27 @@
           <div class="col-1">
             <form id="form" autocomplete="off">
               <div class="container-input">
-                <input type="text" name="first name" id="input-first-name" placeholder="Nombre">
+                <label class="label-input" for="input-first-name">Nombre</label>
+                <input type="text" class="input" name="first name" id="input-first-name">
                 <p class="alert-first-name">Ingresá un nombre válido</p>
               </div>
               <div class="container-input">
-                <input type="text" name="last name" id="input-last-name" placeholder="Apellido">
+                <label class="label-input" for="input-last-name">Apellido</label>
+                <input type="text" class="input" name="last name" id="input-last-name">
                 <p class="alert-last-name">Ingresá un apellido válido</p>
               </div>
               <div class="container-input">
-                <input type="text" name="email" id="input-email" placeholder="Email">
+                <label class="label-input" for="input-email">Email</label>
+                <input type="text" class="input" name="email" id="input-email">
                 <p class="alert-email2">Ingresá un email válido</p>
               </div>
               <div class="container-input">
-                <input type="tel" name="telephone" id="input-telephone" placeholder="Número de celular">
-                <p class="alert-telephone">Debe tener el código de área sin 0</p>
+                <label class="label-input" for="input-telephone">Número de celular</label>
+                <input type="tel" class="input" name="telephone" id="input-telephone">
+                <p class="alert-telephone">Debe tener código de área sin 0 seguido del número sin 15</p>
               </div>
               <div class="container-input">
+                <label class="label-input" for="select-box">Curso</label>
                 <div class="select-box" id="select-box">
                   <select id="select">
                     <option value="0">Curso</option>
@@ -143,7 +148,7 @@
                 </div>
                 <p class="alert-select">Selecciona una opción</p>
               </div>
-              <button type="submit">Enviar</button>
+              <button class="submit-button" type="submit">Enviar</button>
             </form>
           </div>
 

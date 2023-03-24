@@ -36,55 +36,55 @@ function validateRegularExpressions(e) {
     case "input-first-name":
       if (!expName.test(firstName.value)) {
         firstName.style.borderBottom = "2px solid #c899ff"
-        alertFirstName.style.display = "block";
+        alertFirstName.style.visibility = "visible";
       }
       else {
         firstName.style.borderBottom = "2px solid #009688"
-        alertFirstName.style.display = "none";
+        alertFirstName.style.visibility = "hidden";
       }
       break;
 
     case "input-last-name":
       if (!expName.test(lastName.value)) {
         lastName.style.borderBottom = "2px solid #c899ff"
-        alertLastname.style.display = "block";
+        alertLastname.style.visibility = "visible";
       }
       else {
         lastName.style.borderBottom = "2px solid #009688"
-        alertLastname.style.display = "none";
+        alertLastname.style.visibility = "hidden";
       }
       break;
 
     case "input-email":
       if (!expEmail.test(email.value)) {
         email.style.borderBottom = "2px solid #c899ff"
-        alertEmail.style.display = "block";
+        alertEmail.style.visibility = "visible";
       }
       else {
         email.style.borderBottom = "2px solid #009688"
-        alertEmail.style.display = "none";
+        alertEmail.style.visibility = "hidden";
       }
       break;
 
       case "input-telephone":
       if (!expTelephone.test(telephone.value)) {
         telephone.style.borderBottom = "2px solid #c899ff"
-        alertTelephone.style.display = "block";
+        alertTelephone.style.visibility = "visible";
       }
       else {
         telephone.style.borderBottom = "2px solid #009688"
-        alertTelephone.style.display = "none";
+        alertTelephone.style.visibility = "hidden";
       }
       break;
 
     case "select":
       if (select.value == 0) {
         selectBox.style.borderBottom = "2px solid #c899ff"
-        alertSelect.style.display = "block";
+        alertSelect.style.visibility = "visible";
       }
       else {
         selectBox.style.borderBottom = "2px solid #009688"
-        alertSelect.style.display = "none";
+        alertSelect.style.visibility = "hidden";
       }
       break;
   }
@@ -122,6 +122,7 @@ form.addEventListener("submit", (e) => {
   }
 
   else {
+    form.reset();
     modalSuccess.classList.add("active");
   }
 });

@@ -888,13 +888,25 @@ CONTACT
   width: 80%;
 }
 
-.contact .row-1 .col-1 form input {
-  margin-bottom: 6rem;
+.container-input {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.label-input {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  opacity: .65;
+  margin-bottom: .5rem;
+}
+
+.input {
   width: 100%;
   outline: none;
   border: none;
   border-bottom: 2px solid var(--main-color);
-  padding: 1rem 1.3rem;
+  padding: 1rem 0;
   background: transparent;
   font-size: 1.7rem;
   font-weight: 300;
@@ -902,42 +914,23 @@ CONTACT
   opacity: .85;
 }
 
-.contact .container-input {
-  position: relative;
-}
-
 .contact .alert-first-name,
 .contact .alert-last-name,
 .contact .alert-email2,
-.contact .alert-telephone {
-  position: absolute;
-  bottom: 3.5rem;
-  left: 0;
-  font-size: 1.4rem;
-  color: var(--alert);
-  display: none;
-}
-
+.contact .alert-telephone,
 .contact .alert-select {
-  position: absolute;
-  bottom: -2.5rem;
-  left: 0;
+  margin-top: .5rem;
   font-size: 1.4rem;
   color: var(--alert);
-  display: none;
+  visibility: hidden;
 }
 
-.contact input::placeholder {
-  color: var(--white);
-  opacity: .65;
-}
-
-.contact .row-1 .col-1 form .select-box {
-  padding: 1rem 1.3rem;
+.select-box {
+  padding: 1rem 0;
   border-bottom: 2px solid var(--main-color);
 }
 
-.contact .row-1 .col-1 form .select-box select {
+.select-box select {
   width: 100%;
   background: var(--black2);
   border: none;
@@ -948,16 +941,15 @@ CONTACT
   opacity: .85;
 }
 
-.contact .row-1 .col-1 form .select-box select option {
+.select-box select option {
   font-weight: 300;
 }
 
-.contact .row-1 .col-1 form .select-box select:focus {
+.select-box select:focus {
   outline: none;
 }
 
-.contact .row-1 .col-1 form button {
-  margin-top: 4rem;
+.submit-button {
   width: 100%;
   border: none;
   border-radius: 1rem;
