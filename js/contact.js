@@ -25,7 +25,7 @@ const closeModalSuccess = document.getElementById("close-modal-success");
 
 // Regular Expressions
 const expName = /^[\S][a-zA-ZÀ-ÿ\s]{1,20}$/;
-const expEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{4,63}\.){1,125}[A-Z]{2,4}$/i;
+const expEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{4,63}\.){1,125}(com|net|org|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)\b$/i;
 const expTelephone = /^[\S][0-9]{9}$/;
 
 
@@ -66,7 +66,7 @@ function validateRegularExpressions(e) {
       }
       break;
 
-      case "input-telephone":
+    case "input-telephone":
       if (!expTelephone.test(telephone.value)) {
         telephone.style.borderBottom = "2px solid #c899ff"
         alertTelephone.style.visibility = "visible";
