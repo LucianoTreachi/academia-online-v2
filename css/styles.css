@@ -258,17 +258,24 @@ HOME
 }
 
 .home .container .col-1 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--white);
   opacity: .90;
+  width: 90%;
+  text-transform: capitalize;
   animation: fadeInDown;
   animation-duration: 1s;
   animation-fill-mode: backwards;
   animation-delay: .2s;
 }
 
+.home .container .col-1 span {
+  color: var(--main-color);
+}
+
 .home .container .col-1 p {
   margin: 1rem 0;
+  width: 80%;
   animation: fadeInDown;
   animation-duration: 1s;
   animation-fill-mode: backwards;
@@ -1185,6 +1192,13 @@ RESPONSIVE
 
   .home .container .col-1 h1 {
     font-size: 6rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .home .container .col-1 p {
+    text-align: center;
+    margin: 1rem auto;
   }
 
   .home .container .col-2 {
@@ -1293,6 +1307,17 @@ RESPONSIVE
     text-align: initial;
   }
 
+  .home .container .col-1 h1 {
+    text-align: initial;
+    margin: 0;
+    width: 100%;
+  }
+
+  .home .container .col-1 p {
+    text-align: initial;
+    margin: 1rem 0;
+  }
+
   .home .container .col-2 img {
     width: 100%;
   }
@@ -1328,6 +1353,10 @@ RESPONSIVE
 
   .home .container .col-1 h1 {
     font-size: 4rem;
+  }
+
+  .home .container .col-1 p {
+    width: 100%;
   }
 
   .home .container .col-1 a {
