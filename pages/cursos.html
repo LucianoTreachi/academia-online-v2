@@ -2,11 +2,28 @@
 <html lang="es">
 
 <head>
-  <title>ACADEMIA IT | Cursos</title>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACADEMIA IT | Cursos</title>
   <meta name="description" content="Mirá todos los cursos que tenemos!">
+
+  <!-- Preconnect -->
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+
+  <!-- Preload -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="preload" as="style" href="../css/styles.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Script -->
+  <script src="../js/main.js" defer></script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="ACADEMIA IT | Cursos">
@@ -29,21 +46,6 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
-
-  <!-- Google Fonts -->
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
-
-  <!-- Remix Icon -->
-  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-
-  <!-- CSS -->
-  <link rel="preload" as="style" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -55,18 +57,12 @@
     </div>
   </a>
 
-  <!--===============================
-  HEADER & NAV 
-  ================================-->
-
   <header>
-
     <div class="container">
       <nav>
         <a href="../index.html">
           <img src="../assets/logos/main-logo.png" alt="Logo Academia IT">
         </a>
-
         <div class="navbar">
           <div class="heading-navbar">
             <img src="../assets/logos/main-logo.png" alt="Logo Academia IT">
@@ -77,20 +73,15 @@
           <a href="./cursos.html" class="active">Cursos</a>
           <a href="./contacto.html">Contacto</a>
         </div>
-
         <i class="ri-menu-line open-menu"></i>
       </nav>
     </div>
   </header>
 
-  <!--===============================
-  MAIN 
-  ================================-->
-
   <main>
 
     <!--===== HERO =====-->
-    <section class="hero-section section">
+    <section class="page-hero-section">
       <div class="container">
         <div>
           <h2 class="title-section">Cursos</h2>
@@ -516,17 +507,13 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="row-2">
           <a href="../index.html" class="btn-back"><i class="ri-arrow-left-line"></i> Volver al home</a>
         </div>
-
       </div>
-
     </div>
-
   </main>
 
   <!--===============================
@@ -535,7 +522,6 @@
 
   <footer class="section">
     <div class="container">
-
       <div class="row">
         <div class="col">
           <h2>ACADEMIA IT</h2>
@@ -544,13 +530,11 @@
           <a href="./cursos.html">Cursos</a>
           <a href="./contacto.html">Contacto</a>
         </div>
-
         <div class="col">
           <h2>Términos</h2>
           <a href="#0">Términos y condiciones</a>
           <a href="#0">Políticas de privacidad</a>
         </div>
-
         <div class="col">
           <h2>Redes</h2>
           <div class="socials">
@@ -572,18 +556,9 @@
           </div>
         </div>
       </div>
-
       <p class="copy">&#169; 2023 | Todos los derechos reservados</p>
     </div>
-
   </footer>
-
-  <!--===============================
-  SCRIPT 
-  ================================-->
-
-  <!-- Main Js -->
-  <script src="../js/main.js"></script>
 </body>
 
 </html>

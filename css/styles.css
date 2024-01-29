@@ -45,7 +45,7 @@ a {
 }
 
 .section {
-  padding: 6rem 9%;
+  padding: 10rem 9%;
 }
 
 .container {
@@ -71,13 +71,9 @@ a {
   position: absolute;
 }
 
-.hero-section {
+.page-hero-section {
   background-color: var(--black2);
-}
-
-.hero-section .container div {
-  border-left: 2px solid var(--main-color);
-  padding-left: 2rem;
+  padding: 10rem 9% 0;
 }
 
 .scrollToTop-Btn {
@@ -143,14 +139,15 @@ a {
 
 @keyframes fadeInDown {
   0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
+
   to {
-      opacity: 1;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
@@ -298,7 +295,7 @@ HOME
   animation-duration: 1s;
   animation-fill-mode: backwards;
   animation-delay: .6s;
-  
+
 }
 
 .home .container .col-1 a:hover {
@@ -1300,7 +1297,7 @@ RESPONSIVE
   }
 
   .home .container {
-    padding: 3rem;
+    padding: 4rem 3rem;
   }
 
   .home .container .col-1 {
@@ -1350,6 +1347,14 @@ RESPONSIVE
 }
 
 @media screen and (max-width: 500px) {
+
+  .section {
+    padding: 6rem 9%;
+  }
+
+  .page-hero-section {
+    padding: 6rem 9% 0;
+  }
 
   .home .container .col-1 h1 {
     font-size: 4rem;

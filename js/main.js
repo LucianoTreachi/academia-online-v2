@@ -18,10 +18,9 @@ navLinks.forEach((e) => {
   })
 });
 
-
 ////////// SCROLL TO TOP //////////
 const scrollTopBtn = document.querySelector(".scrollToTop-Btn");
-  
+
 window.addEventListener("scroll", function () {
   scrollTopBtn.classList.toggle("active", window.scrollY > 500);
 });
