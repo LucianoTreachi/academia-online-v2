@@ -21,5 +21,5 @@ Accede aquí → [Sitio web](https://academiaonline2.netlify.app/)
 
 Soy un Desarrollador Frontend dedicado a crear soluciones web eficientes, accesibles, intuitivas y fáciles de usar que potencian la experiencia del usuario.
 
-[![Sitio Web](https://img.shields.io/badge/Sitio_Web-black?style=for-the-badge&logoColor=white)](https://lucianotreachi.vercel.app/)
+[![Sitio Web](https://img.shields.io/badge/Sitio_Web-black?style=for-the-badge&logoColor=white)](https://lucianotreachi.website/)
 [![linkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/luciano-treachi/)
